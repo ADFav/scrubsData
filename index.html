@@ -4,8 +4,8 @@
     <script src = "https://cdn.plot.ly/plotly-latest.min.js"></script>
   </head>
   <body>
-    <div id="myDiv"></div>
     <div id="myDiv2"></div>
+    <div id="myDiv"></div>
     <script>
       var data = [
   [8.6, 8.3, 8.2, 9.2, 8.4, 8.4, 8.2, 8.3, 8.3, 8.3, 8.1, 8.3, 8.1, 8.3, 8.7, 8, 8.1, 8, 8.2, 8.2, 7.9, 9.1, 8.9, 8.8],
@@ -34,9 +34,7 @@ Plotly.newPlot('myDiv', data.map(function(elem,index) {
     boxpoints: false
   };
 }), {
-  title : "IMDB Ratings by Season",
-  height: "900px",
-  width: "1080px"
+  title : "IMDB Ratings by Season"
 });
 
 Plotly.newPlot('myDiv2',[{
